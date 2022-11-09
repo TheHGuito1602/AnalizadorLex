@@ -1,0 +1,25 @@
+/************
+	hola hola
+	hola
+	*/
+public UNPA.WinForm.Compiladores;
+
+public class Varargs_Project{
+    
+    public static void main(String [] args){
+        //TODO code application logic here
+        
+        vaTest(10); //
+        vaTest(1,2,3); //3arg
+        vaTest(); //sin arg
+    }
+    //vaTest usa un vararg
+    static void vaTest(int ... v){
+        System.out.println("Numero de args: " + v.lenght);
+        System.out.println("Contiene: ");
+        for(int i = 0; i<v.lenght; i++){
+            System.out.println(" arg " +i+": "+v[i]);
+        }    
+        System.out.println();
+    }
+}
